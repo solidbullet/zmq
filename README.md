@@ -2,6 +2,7 @@
 # npm install zeromq  
 # push/pull 模式 服务端push，客户端pull，只有一个客户端才能接收到数据  
 # pub/sub 模式，客户端各方都能接收到数据
+# mt5:sendjson.mq5; mt4:接收端zeromq.mq4; nodejs：pub2mt4.js
 
 #Push/Pull  
 
