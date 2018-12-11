@@ -38,8 +38,9 @@ void OnTradeTransaction(const MqlTradeTransaction& trans,
          type = HistoryDealGetInteger(hticket,DEAL_TYPE); 
       }
       if(hsymbol != IsBtc) return; 
-      if(type == 0) jv["orderQty"] = lots*BtcScale;
-      if(type == 1) jv["orderQty"] = -lots*BtcScale;
+      int volume = lots*BtcScale;
+      if(type == 0) jv["orderQty"] = volume;
+      if(type == 1) jv["orderQty"] = -volume;
       BitCoin Btc;
       Btc.SendTicket(&jv);
    } 
