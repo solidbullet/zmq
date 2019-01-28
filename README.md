@@ -1,4 +1,4 @@
-# nodejs  
+# zmq跟单使用说明，mt5端启动ea：sendjson.mq5，数据发送到nodejs的8888端口，mt4端启动脚本：zmq接收端.mq4,服务器nodejs端启动server.js。 
 # npm install zeromq  
 # push/pull 模式 服务端push，客户端pull，只有一个客户端才能接收到数据  
 # pub/sub 模式，客户端各方都能接收到数据
